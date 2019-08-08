@@ -11,6 +11,7 @@ Sometimes, when I want to unset entity attribute values, it does not work. When 
 
 ### Setup
 - Clone repository
+- Install dependencies `composer install`
 - Update database config
 - Set app key `php artisan key:generate`
 - Run migration `php artisam migrate`
