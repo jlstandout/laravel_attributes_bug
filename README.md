@@ -7,15 +7,14 @@
  - One attribute is flagged as "is_collection"
 
 ### About issue
-Sometimes, when I want to unset entity attribute values, it does not work. When I delete value from one attribute, I must clear cache manually to see correct value. When I try to reset values for multiple attributes, in reality it deletes values only from one attribute, whats more, I must manually delete cache to see changes.
+When I delete value from one entity attribute AND I'm not trying to update any entity attributes with "is_collection=true", attribute is updated in database, but I need to clear cache to see changes in frontend. But if I'm trying to reset value for entity attribute AND at least one attribute in request is collection (and value is not empty), value is not saved even after cache clear.
 
 ### Setup
 - Clone repository
-- Install dependencies `composer install`
 - Update database config
 - Set app key `php artisan key:generate`
-- Run migration `php artisan migrate`
-- Run command `php artisan rinvex:migrate:attributes`
+- Run migration `php artisam migrate`
+- Run command `php artisan rinvex:Cmigrate:attributes`
 - Run Seed `php artisan db:seed`
 
 ### Steps to replicate
