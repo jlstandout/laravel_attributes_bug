@@ -14,8 +14,8 @@ Sometimes, when I want to unset entity attribute values, it does not work. When 
 - Install dependencies `composer install`
 - Update database config
 - Set app key `php artisan key:generate`
-- Run migration `php artisam migrate`
-- Run command `php artisan rinvex:Cmigrate:attributes`
+- Run migration `php artisan migrate`
+- Run command `php artisan rinvex:migrate:attributes`
 - Run Seed `php artisan db:seed`
 
 ### Steps to replicate
