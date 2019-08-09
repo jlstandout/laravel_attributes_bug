@@ -12,9 +12,10 @@ When I delete value from one entity attribute AND I'm not trying to update any e
 ### Setup
 - Clone repository
 - Update database config
+- Install dependencies `composer install`
 - Set app key `php artisan key:generate`
-- Run migration `php artisam migrate`
-- Run command `php artisan rinvex:Cmigrate:attributes`
+- Run migration `php artisan migrate`
+- Run command `php artisan rinvex:migrate:attributes`
 - Run Seed `php artisan db:seed`
 
 ### Steps to replicate
